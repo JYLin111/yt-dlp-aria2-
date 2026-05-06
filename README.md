@@ -59,6 +59,14 @@ systemctl --user daemon-reload
 systemctl --user enable --now yt-dlp-local-server.service
 ```
 
+## 合法使用声明
+
+本项目仅用于下载自己拥有权利、获得授权或平台允许下载的内容。请遵守当地法律法规、网站服务条款和版权要求。用户自行承担使用本工具产生的合规责任。
+
 ## 注意
 
 浏览器脚本不能直接执行本地命令，所以需要本地 Python 服务作为桥接。服务只监听 `127.0.0.1`，用于接收油猴脚本发送的当前页面 URL。
+
+## License
+
+MIT License. See [LICENSE](LICENSE).

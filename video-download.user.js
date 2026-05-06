@@ -31,6 +31,9 @@
   });
 
   button.addEventListener('click', () => {
+    const allowed = confirm('请确认：仅下载自己拥有权利、获得授权或平台允许下载的内容。是否继续？');
+    if (!allowed) return;
+
     button.textContent = '已发送';
     GM_xmlhttpRequest({
       method: 'GET',
